@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Edwards Guitars</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="land-page.css">
+ </head>
+<body>
+    <div class="menu-container">
+        <div class="navbar">
+            <img src="images/edwards-logo.png" class="ed-logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Specs</a></li>
+                    <li><a href="">Sound Demo</a></li>
+                    <li><a href="">Price Catalogue</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+    </div>
+    <div class="gtr-info">
+        <div class="overview">
+            <h2> Edwards <br/>E-SA 138LTC</h2>
+            <h3> Semi-hollow</h3>
+            <p> Made in Japan</p>
+            <h4> $1,200</h4>
+            <button type="button"><span class="buy">Buy Now</span><img src="images/arrows.png" class="arrows" >
+            </button>
+        </div>
+        <div class="gtr-img">
+            <img src="images/E-SA-180LTCBlack-1200x440.png" class="guitar" >
+            <div class="color-box"></div>
+        </div>
+    </div>  
+    <div class="social-media">
+        <img src="images/fb.png">
+        <img src="images/tw.png">
+        <img src="images/ig.png">
+    </div>
+</div>
+<script>
+    var menuList = document.getElementById("menuList");
+    menuList.style.maxHeight = "0px" ; 
+    function togglemenu(){
+        if(menuList.style.maxHeight=="0px"){
+            menuList.style.maxHeight="130px";
+        }
+        else
+            {
+                menuList.style.maxHeight="0px";
+            }
+    }
+</script>
+</body>
+</html>
